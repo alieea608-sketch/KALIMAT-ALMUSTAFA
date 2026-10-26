@@ -5,7 +5,7 @@
 
 const STORE = {
   name: "كلمات المصطفى للاتصالات ",
-  phone: "07760986035",
+  phone: "9647760986035",
 
   homeGov: "كربلاء",
   karbalaFee: 5000,
