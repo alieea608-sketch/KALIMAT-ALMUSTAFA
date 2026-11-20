@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1677e8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="كلمات المصطفى">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <script>
+try {
+  if (localStorage.getItem("kl_theme") === "dark") document.documentElement.setAttribute("data-theme", "dark");
+} catch (e) {}
+</script>
+  <title>كلمات ريلز | كلمات المصطفى</title>
+  <meta name="description" content="شاهد مقاطع قصيرة لأحدث المنتجات من متجر كلمات المصطفى للاتصالات.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_IQ">
+  <meta property="og:site_name" content="كلمات المصطفى للاتصالات">
+  <meta property="og:title" content="كلمات ريلز | كلمات المصطفى للاتصالات">
+  <meta property="og:description" content="شاهد مقاطع قصيرة لأحدث المنتجات من متجر كلمات المصطفى للاتصالات.">
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/images/klmatlogo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="كلمات ريلز | كلمات المصطفى للاتصالات">
+  <meta name="twitter:description" content="شاهد مقاطع قصيرة لأحدث المنتجات من متجر كلمات المصطفى للاتصالات.">
+  <meta name="twitter:image" content="https://YOUR-DOMAIN.com/images/klmatlogo.jpg">
+  <script>
+(function() {
+  function ok(u) {
+    try {
+      var x = new XMLHttpRequest;
+      x.open("GET", u, false);
+      x.send(null);
+      return x.status >= 200 && x.status < 400 && !/^\s*</.test(x.responseText);
+    } catch (e) {
+      return false;
+    }
+  }
+  var c = ok("style.css") ? "" : ok("css/style.css") ? "css/" : "";
+  var j = ok("main.js") ? "" : ok("js/main.js") ? "js/" : "";
+  window.__jsp = j;
+  document.write('<link rel="stylesheet" href="' + c + 'style.css?v=3">');
+})();
+</script>
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
+</head>
+<body data-page="reels">
+  <header id="site-header"></header>
+
+  <main class="reels-page">
+    <div class="reels-page-heading">
+      <a href="index.html">← العودة للمتجر</a>
+      <h1>كلمات ريلز</h1>
+      <p>شاهد مقاطع منتجاتنا القصيرة</p>
+    </div>
+
+    <div id="reelsViewer" class="reels-viewer">
+      <p>جارٍ تحميل المقاطع...</p>
+    </div>
+
+    
+<div class="reels-controls">
+  <button id="reelPrev" type="button" aria-label="المقطع السابق" title="السابق">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="m6 15 6-6 6 6" />
+    </svg>
+  </button>
+
+  <button id="reelNext" type="button" aria-label="المقطع التالي" title="التالي">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  </button>
+</div>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+document.write('<script src="' + window.__jsp + 'supabase-config.js?v=3"><\/script>');
+</script>
+  <script>
+document.write('<script src="' + window.__jsp + 'store-api.js?v=3"><\/script>');
+</script>
+  <script>
+document.write('<script src="' + window.__jsp + 'data.js?v=3"><\/script>');
+</script>
+  <script>
+document.write('<script src="' + window.__jsp + 'main.js?v=3"><\/script>');
+</script>
+  <script>
+document.write('<script src="' + window.__jsp + 'megamenu.js?v=3"><\/script>');
+</script>
+</body>
+</html>
