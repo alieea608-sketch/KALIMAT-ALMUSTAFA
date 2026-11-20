@@ -14,10 +14,8 @@ a{text-decoration:none;color:inherit}
 button{font-family:inherit;cursor:pointer;border:none}
 .container{max-width:1240px;margin:auto;padding:0 20px}
 
-/* الشريط العلوي */
 .topbar{background:var(--blue);color:#fff;font-size:13px;padding:6px 24px;display:flex;justify-content:space-between}
 
-/* الترويسة */
 .header{background:#fff;padding:14px 0;box-shadow:0 2px 10px rgba(0,0,0,.04)}
 .header-in{display:flex;align-items:center;gap:30px}
 .logo{display:flex;align-items:center;gap:10px;color:var(--blue-dark)}
@@ -32,8 +30,6 @@ button{font-family:inherit;cursor:pointer;border:none}
 .cart-btn small{font-size:12px;color:var(--muted)}
 .cart-count{position:absolute;top:-6px;left:-8px;background:var(--blue);color:#fff;font-size:11px;width:20px;height:20px;border-radius:50%;display:grid;place-items:center}
 
-
-/* ================= قائمة الأقسام العصرية ================= */
 .nav {
   position: relative;
   z-index: 20;
@@ -76,7 +72,6 @@ button{font-family:inherit;cursor:pointer;border:none}
     transform .3s ease;
 }
 
-/* لمعة ناعمة تتحرك داخل الزر */
 .nav a::before {
   content: "";
   position: absolute;
@@ -100,7 +95,6 @@ button{font-family:inherit;cursor:pointer;border:none}
   left: 150%;
 }
 
-/* تأثير المرور */
 .nav a:hover {
   color: var(--blue);
   background: #eaf4ff;
@@ -108,7 +102,6 @@ button{font-family:inherit;cursor:pointer;border:none}
   transform: translateY(-2px);
 }
 
-/* القسم الحالي */
 .nav a.active {
   color: #fff;
   background: linear-gradient(135deg, var(--blue), #168cff);
@@ -119,7 +112,6 @@ button{font-family:inherit;cursor:pointer;border:none}
   animation: navEnter .4s ease both;
 }
 
-/* حركة ظهور ناعمة */
 @keyframes navEnter {
   from {
     opacity: .65;
@@ -131,7 +123,6 @@ button{font-family:inherit;cursor:pointer;border:none}
   }
 }
 
-/* أيقونة داخل رابط القائمة إن وجدت */
 .nav a span {
   display: inline-flex;
   align-items: center;
@@ -143,9 +134,6 @@ button{font-family:inherit;cursor:pointer;border:none}
   transform: scale(1.12);
 }
 
-
-
-/* عرض جميع أقسام المتجر على الهاتف */
 @media screen and (max-width: 600px) {
   .nav {
     display: block !important;
@@ -156,7 +144,6 @@ button{font-family:inherit;cursor:pointer;border:none}
     overflow: visible !important;
   }
 
-  
 .nav .nav-in {
   display: grid !important;
   grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
@@ -171,8 +158,6 @@ button{font-family:inherit;cursor:pointer;border:none}
   box-sizing: border-box !important;
 }
 
-
-  
 .nav .nav-in > a {
   display: flex !important;
   flex: initial !important;
@@ -190,7 +175,6 @@ button{font-family:inherit;cursor:pointer;border:none}
   box-sizing: border-box !important;
 }
 
-
   .nav .nav-in > a span {
     font-size: 14px;
   }
@@ -200,7 +184,6 @@ button{font-family:inherit;cursor:pointer;border:none}
   }
 }
 
-/* احترام إعداد تقليل الحركة */
 @media (prefers-reduced-motion: reduce) {
   .nav a,
   .nav a::before,
@@ -210,14 +193,11 @@ button{font-family:inherit;cursor:pointer;border:none}
   }
 }
 
-
-/* الأزرار */
 .btn-primary{display:inline-block;background:var(--blue);color:#fff;padding:10px 26px;border-radius:50px;font-weight:700;transition:.2s;text-align:center}
 .btn-primary:hover{background:var(--blue-dark)}
 .btn-primary.full{display:block;width:100%;border-radius:8px;padding:9px}
 .btn-white{display:inline-block;background:#fff;color:var(--blue-dark);padding:5px 18px;border-radius:50px;font-size:13px;font-weight:700;margin-top:8px}
 
-/* البانر */
 .hero{margin-top:22px;border-radius:20px;background:linear-gradient(135deg,#d9ecfd,#eef6ff);padding:40px 50px;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:var(--shadow)}
 .hero h1{font-size:52px;color:var(--blue-dark);font-weight:800;line-height:1.1}
 .hero h2{font-size:34px;font-weight:700;margin-bottom:10px}
@@ -229,7 +209,6 @@ button{font-family:inherit;cursor:pointer;border:none}
 .feature b{display:block;font-size:14px}
 .feature small{color:var(--muted)}
 
-/* كروت الأقسام */
 .cat-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0}
 .cat-card{position:relative;background:#fff;border:1px solid #d9e9f8;border-radius:var(--radius);padding:26px;display:flex;justify-content:space-between;align-items:center;transition:.25s;overflow:hidden}
 .cat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
@@ -238,21 +217,18 @@ button{font-family:inherit;cursor:pointer;border:none}
 .cc-ico{font-size:62px}
 .cc-arrow{position:absolute;left:14px;bottom:14px;background:var(--blue);color:#fff;width:32px;height:32px;border-radius:50%;display:grid;place-items:center}
 
-/* عناوين */
 .section-head{display:flex;justify-content:space-between;margin:20px 0 14px}
 .section-head h3{font-size:22px;color:var(--blue-dark)}
 .page-title{margin:28px 0 14px}
 .page-title h1{font-size:34px;color:var(--blue-dark)}
 .page-title p{color:var(--muted)}
 
-/* الفلاتر */
 .filters{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0 24px}
 .filter-btn{background:#fff;border:2px solid #d9e9f8;border-radius:14px;padding:10px 20px;display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;color:var(--text);transition:.2s}
 .filter-btn .f-ico{font-size:24px}
 .filter-btn:hover{border-color:var(--blue)}
 .filter-btn.active{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:var(--shadow)}
 
-/* المنتجات */
 .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px;margin-bottom:34px}
 .card{position:relative;background:#fff;border-radius:var(--radius);padding:16px;border:1px solid #e1eef9;transition:.25s;display:flex;flex-direction:column;gap:6px}
 .card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
@@ -264,7 +240,6 @@ button{font-family:inherit;cursor:pointer;border:none}
 .price{color:var(--blue);font-weight:800;font-size:18px}
 .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px}
 
-/* البانرات السفلية */
 .promo-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px}
 .promo{border-radius:var(--radius);padding:26px;display:flex;justify-content:space-between;align-items:center;color:#fff;transition:.25s}
 .promo:hover{transform:translateY(-4px)}
@@ -274,7 +249,6 @@ button{font-family:inherit;cursor:pointer;border:none}
 .p2{background:linear-gradient(135deg,#7cc3f7,#3a97e6)}
 .p3{background:linear-gradient(135deg,#2a7ac9,#1b4f94)}
 
-/* السلة الجانبية */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);opacity:0;pointer-events:none;transition:.3s;z-index:90}
 .overlay.show{opacity:1;pointer-events:auto}
 .cart-drawer{position:fixed;top:0;left:-420px;width:400px;max-width:92vw;height:100%;background:#fff;z-index:100;display:flex;flex-direction:column;transition:.3s;box-shadow:4px 0 24px rgba(0,0,0,.15)}
@@ -292,10 +266,8 @@ button{font-family:inherit;cursor:pointer;border:none}
 .cart-foot{padding:18px 20px;border-top:1px solid #e6eef7}
 .total{display:flex;justify-content:space-between;font-size:18px;margin-bottom:12px}
 
-/* الفوتر */
 .footer{background:var(--blue-dark);color:#fff;text-align:center;padding:20px;font-size:14px}
 
-/* الموبايل */
 @media(max-width:900px){
   .cat-cards,.promo-row{grid-template-columns:1fr}
   .hero{flex-direction:column;text-align:center;padding:30px 20px}
@@ -306,7 +278,7 @@ button{font-family:inherit;cursor:pointer;border:none}
   .search{order:3;max-width:100%;flex-basis:100%}
   .topbar{font-size:11px;padding:6px 12px}
 }
-/* ================= بطاقات المنتجات (تحسين) ================= */
+
 .products-grid{grid-template-columns:repeat(auto-fill,minmax(235px,1fr))}
 .card{padding:0;overflow:hidden;gap:0}
 .card-img{display:block;height:215px;padding:14px;background:linear-gradient(135deg,#f3f9ff,#e0eefb)}
@@ -326,7 +298,6 @@ button{font-family:inherit;cursor:pointer;border:none}
 .btn-outline{display:block;text-align:center;border:2px solid var(--blue);color:var(--blue-dark);border-radius:10px;padding:6px;font-weight:700;margin-top:8px;font-size:14px;transition:.2s}
 .btn-outline:hover{background:var(--blue);color:#fff}
 
-/* ================= صفحة المنتج ================= */
 .crumbs{margin:22px 0 4px;color:var(--muted);font-size:14px}
 .crumbs a{color:var(--blue-dark);font-weight:600}
 .pd{display:grid;grid-template-columns:1fr 1fr;gap:34px;background:#fff;border-radius:20px;padding:28px;margin:14px 0 24px;box-shadow:var(--shadow)}
@@ -360,7 +331,6 @@ button{font-family:inherit;cursor:pointer;border:none}
 .specs th,.specs td{padding:12px 14px;text-align:right;border-bottom:1px solid #edf3f9}
 .specs th{width:35%;color:var(--muted);font-weight:600;background:var(--bg)}
 
-/* ================= السلة (تحسين) ================= */
 .ci-img{width:64px;height:64px;object-fit:contain;background:#f3f9ff;border-radius:10px;padding:4px}
 .ci-info small{display:block}
 .ci-color{color:var(--muted)!important;font-weight:400!important;font-size:12px}
@@ -370,7 +340,6 @@ button{font-family:inherit;cursor:pointer;border:none}
 .btn-primary:disabled{background:#b8c9da;cursor:not-allowed}
 button.btn-primary{border:none}
 
-/* ================= نموذج إتمام الطلب ================= */
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:200;padding:16px}
 .modal.show{display:flex}
 .modal-box{background:#fff;border-radius:18px;width:480px;max-width:100%;max-height:92vh;overflow:auto;padding:22px}
@@ -393,22 +362,6 @@ button.btn-primary{border:none}
   .card-img{height:160px}
   .card-desc{display:none}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================
-   تحديث تصميم متجر كلمات المصطفى
-   أبيض وأزرق - مع الحفاظ على الوظائف الحالية
-========================================== */
 
 :root {
   --blue: #1677e8;
@@ -469,8 +422,6 @@ a {
   padding-inline: 0;
 }
 
-/* الشريط العلوي */
-
 .topbar {
   background: #0b2850;
   color: #eaf3ff;
@@ -480,8 +431,6 @@ a {
   font-size: 12px;
   min-height: 34px;
 }
-
-/* الترويسة */
 
 .header {
   position: relative;
@@ -577,15 +526,11 @@ a {
   background: #ed4b62;
 }
 
-/* القائمة الرئيسية */
-
 .nav {
   background: #fff;
   border-bottom: 1px solid #e7edf6;
 }
 
-
-/* توحيد قائمة الأقسام على الهاتف */
 @media (max-width: 600px) {
   .nav-in {
     display: grid;
@@ -617,15 +562,12 @@ a {
   }
 }
 
-
 .nav a:hover,
 .nav a.active {
   background: #f2f7ff;
   color: var(--blue-dark);
   border-bottom-color: var(--blue);
 }
-
-/* الأزرار */
 
 .btn-primary {
   border: 1px solid var(--blue);
@@ -654,8 +596,6 @@ a {
   color: var(--blue-dark);
   box-shadow: 0 3px 12px rgba(0, 0, 0, .06);
 }
-
-/* البانر الرئيسي */
 
 .hero {
   position: relative;
@@ -726,8 +666,6 @@ a {
   font-size: 12px;
 }
 
-/* بطاقات الأقسام */
-
 .cat-cards {
   gap: 18px;
   margin: 32px 0;
@@ -767,8 +705,6 @@ a {
   box-shadow: 0 4px 10px rgba(22, 119, 232, .2);
 }
 
-/* عناوين الصفحات والأقسام */
-
 .section-head {
   align-items: center;
   gap: 12px;
@@ -806,8 +742,6 @@ a {
   color: var(--muted);
 }
 
-/* فلاتر الأقسام */
-
 .filters {
   gap: 10px;
   margin: 16px 0 25px;
@@ -835,8 +769,6 @@ a {
   color: #fff;
   box-shadow: 0 5px 14px rgba(22, 119, 232, .18);
 }
-
-/* شبكة المنتجات */
 
 .products-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -973,8 +905,6 @@ a {
   background: #fff;
 }
 
-/* البانرات الترويجية */
-
 .promo-row {
   gap: 18px;
   margin: 20px 0 45px;
@@ -1012,8 +942,6 @@ a {
 .p3 {
   background: linear-gradient(135deg, #174e98, #0b326a);
 }
-
-/* تفاصيل المنتج */
 
 .crumbs {
   margin: 22px 0 10px;
@@ -1169,8 +1097,6 @@ a {
   border-color: #e9eff7;
 }
 
-/* السلة الجانبية */
-
 .overlay {
   backdrop-filter: blur(3px);
   background: rgba(11, 33, 62, .40);
@@ -1267,8 +1193,6 @@ a {
   font-weight: 800;
 }
 
-/* نموذج إتمام الطلب */
-
 .modal {
   backdrop-filter: blur(5px);
   background: rgba(8, 28, 53, .55);
@@ -1337,8 +1261,6 @@ a {
   color: #d93636;
 }
 
-/* الفوتر */
-
 .footer {
   margin-top: 25px;
   padding: 28px 18px;
@@ -1346,8 +1268,6 @@ a {
   color: #e7f1ff;
   line-height: 2;
 }
-
-/* تحسين التركيز وإمكانية الاستخدام */
 
 button:focus-visible,
 a:focus-visible,
@@ -1362,8 +1282,6 @@ button:disabled {
   opacity: .65;
   cursor: not-allowed;
 }
-
-/* الشاشات المتوسطة */
 
 @media (max-width: 1100px) {
   .products-grid {
@@ -1383,8 +1301,6 @@ button:disabled {
     padding: 36px;
   }
 }
-
-/* الهواتف والأجهزة اللوحية */
 
 @media (max-width: 800px) {
   .container {
@@ -1751,8 +1667,6 @@ button:disabled {
   }
 }
 
-/* الهواتف الصغيرة */
-
 @media (max-width: 360px) {
   .container {
     width: calc(100% - 18px);
@@ -1796,8 +1710,6 @@ button:disabled {
   }
 }
 
-/* تقليل الحركة لمن يفضل ذلك */
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1807,13 +1719,6 @@ button:disabled {
     animation-duration: .01ms !important;
   }
 }
-
-
-
-
-
-
-/* ===== الصفحة الرئيسية: تصميم مضغوط ===== */
 
 .hero {
   min-height: 300px;
@@ -1877,8 +1782,6 @@ button:disabled {
   font-size: 42px;
 }
 
-/* شبكة موحدة تعرض منتجات أكثر */
-
 .products-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
@@ -1909,8 +1812,6 @@ button:disabled {
   margin: 26px 0 14px;
 }
 
-/* فلاتر قابلة للتمرير على الهاتف */
-
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -1921,8 +1822,6 @@ button:disabled {
   padding: 8px 14px;
   font-size: 13px;
 }
-
-/* الشاشات المتوسطة */
 
 @media (max-width: 1000px) {
   .products-grid {
@@ -1942,8 +1841,6 @@ button:disabled {
     padding: 12px;
   }
 }
-
-/* الهاتف */
 
 @media (max-width: 650px) {
   .hero {
@@ -2065,8 +1962,6 @@ button:disabled {
   }
 }
 
-/* الهواتف الصغيرة جداً */
-
 @media (max-width: 360px) {
   .products-grid {
     gap: 7px;
@@ -2088,15 +1983,6 @@ button:disabled {
     font-size: 12px;
   }
 }
-
-
-
-
-
-
-/* =========================================
-   هيدر كلمات المصطفى - تصميم أزرق احترافي
-========================================= */
 
 .topbar {
   background: linear-gradient(90deg, #eaf6ff, #dcefff);
@@ -2156,8 +2042,6 @@ button:disabled {
   color: white;
   font-size: 18px;
 }
-
-/* منطقة الشعار والبحث */
 
 .header {
   background:
@@ -2284,8 +2168,6 @@ button:disabled {
   display: none;
 }
 
-/* زر السلة */
-
 .cart-btn {
   position: relative;
   display: flex;
@@ -2311,8 +2193,6 @@ button:disabled {
   top: 0;
   left: 0;
 }
-
-/* شريط التنقل المتدرج */
 
 .nav {
   position: relative;
@@ -2368,8 +2248,6 @@ button:disabled {
   border-bottom-color: #36b5f3;
 }
 
-/* التوافق مع الشاشات المتوسطة */
-
 @media (max-width: 1100px) {
   .header-in {
     grid-template-columns: auto minmax(0, 1fr) auto;
@@ -2399,8 +2277,6 @@ button:disabled {
     font-size: 13px;
   }
 }
-
-/* الهواتف */
 
 @media (max-width: 800px) {
   .topbar {
@@ -2537,9 +2413,6 @@ button:disabled {
   }
 }
 
-
-
-/* ===== شريط الماركات العالمية ===== */
 .brands-section {
   margin: 34px 0;
   padding: 25px;
@@ -2738,7 +2611,6 @@ button:disabled {
   }
 }
 
-/* شعارات الماركات الإضافية */
 .nubia-mark {
   color: #d71920;
   font-size: 25px;
@@ -2753,7 +2625,6 @@ button:disabled {
   letter-spacing: -.5px;
 }
 
-/* تحسين عرض أسماء الماركات */
 .brand-wordmark {
   white-space: nowrap;
   text-align: center;
@@ -2762,12 +2633,6 @@ button:disabled {
 .brand-item {
   flex-shrink: 0;
 }
-
-
-
-/* =====================================
-   بانر العروض المتحرك - كلمات المصطفى
-   ===================================== */
 
 .promo-slider {
   --promo-blue: #176bc0;
@@ -2990,7 +2855,6 @@ button:disabled {
   color: #b4dcff;
 }
 
-/* رسم إكسسوارات توضيحية */
 .promo-accessory {
   position: absolute;
   box-shadow: 0 20px 35px rgba(20, 69, 120, .17);
@@ -3023,7 +2887,6 @@ button:disabled {
   transform: rotate(-22deg);
 }
 
-/* رسم لابتوب توضيحي */
 .promo-laptop {
   position: relative;
   width: 230px;
@@ -3292,10 +3155,6 @@ button:disabled {
   }
 }
 
-/* =========================================
-   بانرات الأقسام المتحركة - كلمات المصطفى
-   ========================================= */
-
 .category-promo {
   --promo-accent: #66c8ff;
   position: relative;
@@ -3528,7 +3387,6 @@ button:disabled {
   direction: ltr;
 }
 
-/* الشاشات المتوسطة */
 @media (max-width: 760px) {
   .category-promo {
     min-height: 390px;
@@ -3636,12 +3494,6 @@ button:disabled {
   }
 }
 
-/* ففففففففففففففففففففففففففففففف*/
-
-
-
-/* ===== شريط بحث متجر كلمات المصطفى ===== */
-
 .search-container {
   width: 100%;
   max-width: 520px;
@@ -3651,7 +3503,6 @@ button:disabled {
   font-family: inherit;
 }
 
-/* الحاوية الرئيسية */
 .search-bar {
   display: flex;
   align-items: center;
@@ -3672,13 +3523,11 @@ button:disabled {
               background .25s ease;
 }
 
-/* التركيز على البحث */
 .search-bar:focus-within {
   border-color: var(--blue);
   box-shadow: 0 0 0 3px rgba(40, 120, 206, .09);
 }
 
-/* مساحة الكتابة */
 .search-input-wrapper {
   display: flex;
   align-items: center;
@@ -3689,7 +3538,6 @@ button:disabled {
   gap: 10px;
 }
 
-/* حقل النص */
 .search-bar input {
   flex: 1;
   min-width: 0;
@@ -3714,7 +3562,6 @@ button:disabled {
   font-size: 13px;
 }
 
-/* الفاصل */
 .search-divider {
   width: 1px;
   height: 23px;
@@ -3722,7 +3569,6 @@ button:disabled {
   background: #e0eaf5;
 }
 
-/* الأيقونة */
 .bag-icon {
   display: flex;
   align-items: center;
@@ -3736,7 +3582,6 @@ button:disabled {
   height: 21px;
 }
 
-/* زر البحث */
 .search-button {
   display: flex;
   align-items: center;
@@ -3774,7 +3619,6 @@ button:disabled {
   transform: scale(.95);
 }
 
-/* الهاتف */
 @media (max-width: 600px) {
   .search-container {
     max-width: 100%;
@@ -3829,12 +3673,6 @@ button:disabled {
   }
 }
 
-
-
-
-
-
-/* إصلاح ظهور عبارة البانر على الهاتف */
 @media (max-width: 600px) {
   .hero {
     width: 100%;
@@ -3888,14 +3726,6 @@ button:disabled {
   }
 }
 
-
-
-/* =====================================================================
-   إصلاح الصفحة الرئيسية - كلمات المصطفى
-   (إضافة فقط: لا يغيّر أي تنسيق سابق، ويستهدف عناصر index.html الحالية)
-   ===================================================================== */
-
-/* ---------- 1) بانر العروض الرئيسي ---------- */
 .promo-slider {
   min-height: 365px;
 }
@@ -3984,7 +3814,6 @@ button:disabled {
   border-color: rgba(255, 255, 255, .22);
 }
 
-/* الأسهم */
 .promo-slider .promo-prev,
 .promo-slider .promo-next {
   position: absolute;
@@ -4012,7 +3841,6 @@ button:disabled {
   color: #fff;
 }
 
-/* النقاط */
 .promo-slider .promo-dots {
   position: absolute;
   bottom: 22px;
@@ -4021,7 +3849,6 @@ button:disabled {
   direction: ltr;
 }
 
-/* شريط التقدّم (تتحكم به الجافاسكربت عبر العرض) */
 .promo-slider .promo-progress {
   position: absolute;
   right: 0;
@@ -4033,7 +3860,6 @@ button:disabled {
   background: #2f9bf0;
 }
 
-/* ---------- 2) بطاقات الأقسام ---------- */
 .category-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -4041,7 +3867,6 @@ button:disabled {
   margin: 0 0 8px;
 }
 
-/* ---------- 3) عناوين أقسام الرئيسية ---------- */
 .home-section { margin: 0 0 42px; }
 
 .home-section .section-head {
@@ -4073,7 +3898,6 @@ button:disabled {
   font-size: 14px;
 }
 
-/* ---------- 4) مميزات المتجر ---------- */
 .home-benefits {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -4114,7 +3938,6 @@ button:disabled {
   color: var(--muted);
 }
 
-/* ---------- 5) الشاشات الصغيرة ---------- */
 @media (max-width: 900px) {
   .category-cards,
   .home-benefits { grid-template-columns: 1fr; }
@@ -4147,9 +3970,6 @@ button:disabled {
   .home-section .section-head h2 { font-size: 22px; }
 }
 
-
-
-/* إطار مضيء متحرك حول بطاقات المنتجات */
 .product-card {
   position: relative;
   isolation: isolate;
@@ -4158,7 +3978,6 @@ button:disabled {
   z-index: 0;
 }
 
-/* طبقة الإطار المتدرج */
 .product-card::before {
   content: "";
   position: absolute;
@@ -4190,7 +4009,6 @@ button:disabled {
   transition: opacity 0.3s ease;
 }
 
-/* إضاءة البطاقة عند مرور المؤشر */
 .product-card:hover::before {
   opacity: 1;
   animation: cornerSweep 2.5s linear infinite;
@@ -4204,7 +4022,6 @@ button:disabled {
     box-shadow 0.3s ease;
 }
 
-/* حركة الإطار */
 @property --border-angle {
   syntax: "<angle>";
   initial-value: 0deg;
@@ -4217,18 +4034,11 @@ button:disabled {
   }
 }
 
-/* تحسين العرض على الهاتف */
 @media (hover: none) {
   .product-card:hover {
     transform: none;
   }
 }
-
-
-/* =========================================
-   إطار متحرك باستمرار لبطاقات المنتجات
-   Corner Sweep
-   ========================================= */
 
 @property --sweep-angle {
   syntax: "<angle>";
@@ -4246,7 +4056,6 @@ button:disabled {
     box-shadow 0.3s ease;
 }
 
-/* الإطار المتدرج المتحرك */
 .card::before {
   content: "";
   position: absolute;
@@ -4276,11 +4085,9 @@ button:disabled {
   pointer-events: none;
   z-index: 5;
 
-  /* الحركة مستمرة دون أي ضغط */
   animation: productBorderSweep 3s linear infinite;
 }
 
-/* دوران الإضاءة حول كامل الإطار */
 @keyframes productBorderSweep {
   from {
     --sweep-angle: 0deg;
@@ -4291,13 +4098,11 @@ button:disabled {
   }
 }
 
-/* تأثير بسيط عند مرور المؤشر */
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 15px 35px rgba(22, 140, 255, 0.18);
 }
 
-/* إيقاف الحركة فقط إذا كان المستخدم يفضل تقليلها */
 @media (prefers-reduced-motion: reduce) {
   .card::before {
     animation: none;
@@ -4310,15 +4115,8 @@ button:disabled {
   }
 }
 
-
-
-/* =====================================
-   ضبط البانرات على شاشات الهاتف
-   ===================================== */
-
 @media (max-width: 600px) {
 
-  /* البانر الرئيسي في الصفحة الرئيسية */
   .promo-slider {
     width: 100%;
     height: auto;
@@ -4377,7 +4175,6 @@ button:disabled {
     z-index: 4;
   }
 
-  /* بانرات صفحات الأقسام */
   .category-promo {
     width: 100%;
     height: auto;
@@ -4444,10 +4241,6 @@ button:disabled {
   }
 }
 
-
-
-
-/* إصلاح قائمة الأقسام في الهيدر على الهاتف */
 @media (max-width: 600px) {
 
   .header-categories {
@@ -4479,7 +4272,6 @@ button:disabled {
   }
 }
 
-/* إصلاح ظهور قائمة الأقسام في الهاتف */
 @media screen and (max-width: 600px) {
   .nav {
     display: block !important;
@@ -4521,9 +4313,6 @@ button:disabled {
   }
 }
 
-
-
-/* السلة العائمة أسفل يسار الهاتف */
 @media screen and (max-width: 600px) {
   .cart-btn,
   .cart-icon,
@@ -4558,9 +4347,6 @@ button:disabled {
   }
 }
 
-
-
-/* شعارات الماركات */
 .brands-track .brand-item {
   display: flex;
   flex-direction: column;
@@ -4624,8 +4410,6 @@ button:disabled {
   }
 }
 
-
-/* أقسام المنتجات في الصفحة الرئيسية */
 .home-category-section {
   margin-top: 30px;
 }
@@ -4756,7 +4540,6 @@ button:disabled {
   font-weight: 800;
 }
 
-/* ترتيب عبارة المتجر في أقصى اليسار على الهاتف */
 @media (max-width: 600px) {
   .header-in {
     display: flex;
@@ -4782,8 +4565,6 @@ button:disabled {
     display: block;
   }
 }
-
-/* ===== كلمات ريلز ===== */
 
 .reels-strip {
   display: flex;
@@ -4918,9 +4699,6 @@ button:disabled {
   }
 }
 
-
-
-
 .brand-logo img {
   max-width: 100%;
   max-height: 42px;
@@ -4931,10 +4709,6 @@ button:disabled {
   display: none;
 }
 
-
-
-
-/* إصلاح ظهور الريلز على جميع أحجام الشاشات */
 #homeReelsSection {
   box-sizing: border-box;
   width: 100%;
@@ -4977,7 +4751,6 @@ button:disabled {
   }
 }
 
-/* قسم الريلز في الصفحة الرئيسية */
 #homeReelsSection:not([hidden]) {
   display: block;
   width: 100%;
@@ -5030,7 +4803,6 @@ button:disabled {
   }
 }
 
-/* عرض بنر الإدارة كصورة كاملة */
 #promoSlider .promo-slide {
   padding: 0 !important;
   overflow: hidden;
@@ -5066,8 +4838,6 @@ button:disabled {
   display: none !important;
 }
 
-
-/* تجربة الريلز العمودية مثل تطبيقات الفيديو */
 body[data-page="reels"] {
   margin: 0;
   background: #000;
@@ -5112,7 +4882,6 @@ body[data-page="reels"] .reels-page-heading p {
   opacity: .8;
 }
 
-
 body[data-page="reels"] .reels-page-heading a {
   display: inline-block;
   color: #fff;
@@ -5142,7 +4911,6 @@ body[data-page="reels"] #activeReelVideo {
   background: #000;
   touch-action: pan-y;
 }
-
 
 body[data-page="reels"] .reel-caption {
   position: absolute;
@@ -5174,7 +4942,6 @@ body[data-page="reels"] .reel-caption h3 {
   box-shadow: none !important;
   outline: none !important;
 }
-
 
 body[data-page="reels"] .reels-product-link {
   display: inline-block;
@@ -5226,8 +4993,6 @@ body[data-page="reels"] .reels-page-heading p {
   box-shadow: none;
 }
 
-
-/* إزالة الإطار والخلفية من عنوان صفحة الريلز */
 body[data-page="reels"] .reels-page-heading,
 body[data-page="reels"] .reels-page-heading *,
 body[data-page="reels"] .reels-page-heading::before,
@@ -5238,7 +5003,6 @@ body[data-page="reels"] .reels-page-heading::after {
   box-shadow: none !important;
 }
 
-/* إزالة أي إطار من رابط العودة للمتجر */
 body[data-page="reels"] .reels-page-heading a {
   background: transparent !important;
   border: none !important;
@@ -5247,14 +5011,12 @@ body[data-page="reels"] .reels-page-heading a {
   border-radius: 0 !important;
 }
 
-/* منع ظهور إطار عند تحديد العنوان */
 body[data-page="reels"] .reels-page-heading *:focus,
 body[data-page="reels"] .reels-page-heading *:focus-visible {
   outline: none !important;
   box-shadow: none !important;
 }
 
-/* إصلاح عنوان الريلز على الهاتف */
 body[data-page="reels"] .reels-page-heading {
   background: none !important;
   border: 0 !important;
@@ -5264,7 +5026,6 @@ body[data-page="reels"] .reels-page-heading {
   padding: 0 !important;
 }
 
-/* إزالة الإطار عن نص العنوان والوصف */
 body[data-page="reels"] .reels-page-heading h1,
 body[data-page="reels"] .reels-page-heading p {
   background: none !important;
@@ -5274,7 +5035,6 @@ body[data-page="reels"] .reels-page-heading p {
   border-radius: 0 !important;
 }
 
-/* إبقاء زر العودة واضحًا دون إطار */
 body[data-page="reels"] .reels-page-heading a {
   background: transparent !important;
   border: 0 !important;
@@ -5282,16 +5042,12 @@ body[data-page="reels"] .reels-page-heading a {
   box-shadow: none !important;
 }
 
-/* إزالة أي طبقة زخرفية حول العنوان */
 body[data-page="reels"] .reels-page-heading::before,
 body[data-page="reels"] .reels-page-heading::after {
   content: none !important;
   display: none !important;
 }
 
-
-
-/* تصميم أنيق لأزرار الريلز */
 body[data-page="reels"] .reels-controls {
   position: absolute;
   z-index: 10;
@@ -5343,7 +5099,6 @@ body[data-page="reels"] .reels-controls button:active {
   background: #a3173f;
 }
 
-/* أزرار ريلز زجاجية باللون الأزرق الفاتح */
 body[data-page="reels"] .reels-controls button {
   width: 48px;
   height: 48px;
@@ -5378,7 +5133,6 @@ body[data-page="reels"] .reels-controls button {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* أيقونات الأسهم */
 body[data-page="reels"] .reels-controls button svg {
   width: 24px;
   height: 24px;
@@ -5389,7 +5143,6 @@ body[data-page="reels"] .reels-controls button svg {
   stroke-linejoin: round;
 }
 
-/* تأثير اللمس */
 body[data-page="reels"] .reels-controls button:active {
   transform: scale(0.88);
   background: rgba(56, 189, 248, 0.55);
@@ -5398,7 +5151,6 @@ body[data-page="reels"] .reels-controls button:active {
     inset 0 1px 4px rgba(255, 255, 255, 0.4);
 }
 
-/* تحسين للشاشات الصغيرة */
 @media (max-width: 480px) {
   body[data-page="reels"] .reels-controls button {
     width: 44px;
@@ -5411,14 +5163,10 @@ body[data-page="reels"] .reels-controls button:active {
   }
 }
 
-
-/* مواصفات مختصرة داخل بطاقة المنتج */
 .card-specs{list-style:none;margin:6px 0 4px;padding:0;display:grid;gap:3px}
 .card-specs li{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;color:var(--muted);border-bottom:1px dashed #e3eaf2;padding-bottom:2px}
 .card-specs li b{color:var(--text,#1b2a3a);font-weight:700;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%}
 
-
-/* شعار الموقع في الترويسة: صغير، شفاف، على اليمين */
 .logo{justify-self:start}
 .logo .logo-ico.logo-ico-img{
   width:auto;height:auto;display:flex;align-items:center;
@@ -5434,10 +5182,6 @@ body[data-page="reels"] .reels-controls button:active {
   .logo .logo-ico.logo-ico-img img{height:32px}
 }
 
-/* =====================================================================
-   بنرات صفحات الأقسام: نفس شكل وقياسات بانر الصفحة الرئيسية
-   (تُطبَّق فقط عند وجود بنرات صور محفوظة من الإدارة)
-   ===================================================================== */
 .category-promo.has-banner-images {
   min-height: 365px;
   margin: 24px 0 32px;
@@ -5495,7 +5239,6 @@ body[data-page="reels"] .reels-controls button:active {
   object-position: center;
 }
 
-/* الأسهم والنقاط بنفس شكل بانر الرئيسية */
 .category-promo.has-banner-images .category-promo-arrow {
   width: 37px;
   height: 37px;
@@ -5559,10 +5302,6 @@ body[data-page="reels"] .reels-controls button:active {
   }
 }
 
-/* =====================================================================
-   طبقة التصميم الحديث: الخلفية • الأيقونات • الانتقالات
-   (إضافة فقط في آخر الملف؛ لا تحذف أي قاعدة سابقة)
-   ===================================================================== */
 :root {
   --ease-out: cubic-bezier(.22, .8, .2, 1);
   --ease-soft: cubic-bezier(.4, 0, .2, 1);
@@ -5573,7 +5312,6 @@ body[data-page="reels"] .reels-controls button:active {
 
 html { scroll-behavior: smooth; background: #f3f8fc; }
 
-/* ---------- الخلفية: هواء بارد مع توهج من لون الشعار ---------- */
 body {
   background-color: #f3f8fc;
   background-image:
@@ -5584,7 +5322,6 @@ body {
   min-height: 100vh;
 }
 
-/* كبسولات الشعار كخلفية هادئة ثابتة خلف المحتوى */
 body::before {
   content: "";
   position: fixed;
@@ -5600,7 +5337,6 @@ body[data-page="reels"]::before { display: none; }
   body::before { opacity: .65; }
 }
 
-/* ---------- الأيقونات: خط واحد موحّد بدل الإيموجي ---------- */
 .ic {
   width: 1.25em;
   height: 1.25em;
@@ -5643,7 +5379,6 @@ body[data-page="reels"]::before { display: none; }
 
 #pageTitle .ic { color: #176bc0; width: .95em; height: .95em; }
 
-/* بطاقات الأقسام في الرئيسية: أيقونة داخل لوح زجاجي */
 .cat-card .cc-ico {
   display: grid;
   place-items: center;
@@ -5663,7 +5398,6 @@ body[data-page="reels"]::before { display: none; }
 .cat-card .cc-ico .ic { width: 40px; height: 40px; stroke-width: 1.5; margin: 0; }
 .cat-card:hover .cc-ico { transform: translateY(-3px) rotate(-4deg); }
 
-/* أزرار الفلاتر */
 .filter-btn { transition: background-color var(--t-base) var(--ease-soft), border-color var(--t-base) var(--ease-soft), color var(--t-base) var(--ease-soft), box-shadow var(--t-base) var(--ease-soft), transform var(--t-fast) var(--ease-out); }
 .filter-btn:active { transform: scale(.97); }
 
@@ -5682,7 +5416,6 @@ body[data-page="reels"]::before { display: none; }
 .filter-btn .f-ico .ic { width: 20px; height: 20px; margin: 0; }
 .filter-btn.active .f-ico { background: rgba(255, 255, 255, .22); color: #fff; }
 
-/* سلة فارغة */
 .cart-items .empty {
   display: flex;
   flex-direction: column;
@@ -5694,7 +5427,6 @@ body[data-page="reels"]::before { display: none; }
 }
 .cart-items .empty .ic { width: 46px; height: 46px; stroke-width: 1.4; opacity: .5; }
 
-/* ---------- الانتقالات: نبضة واحدة هادئة ---------- */
 .btn-primary,
 .btn-outline-big,
 .btn-outline,
@@ -5716,7 +5448,6 @@ body[data-page="reels"]::before { display: none; }
 
 .nav a, .cc-arrow, .search input { transition-timing-function: var(--ease-soft); }
 
-/* السلة والنافذة */
 .overlay { transition: opacity var(--t-base) var(--ease-soft); }
 .cart-drawer { transition: left .5s var(--ease-out), box-shadow .5s var(--ease-out); }
 
@@ -5728,7 +5459,6 @@ body[data-page="reels"]::before { display: none; }
   from { opacity: 0; transform: translateY(16px) scale(.975); }
 }
 
-/* تلاشي بنر الرئيسية بين الشرائح بدل القطع المفاجئ */
 #promoSlider .promo-slide {
   display: block;
   opacity: 0;
@@ -5743,7 +5473,6 @@ body[data-page="reels"]::before { display: none; }
   transition: opacity .8s var(--ease-soft), visibility 0s;
 }
 
-/* الانتقال بين الصفحات (المتصفحات الداعمة فقط) */
 @media (prefers-reduced-motion: no-preference) {
   @view-transition { navigation: auto; }
 
@@ -5753,14 +5482,12 @@ body[data-page="reels"]::before { display: none; }
   @keyframes kl-vt-out { to { opacity: 0; } }
   @keyframes kl-vt-in { from { opacity: 0; transform: translateY(8px); } }
 
-  /* لحظة الدخول الوحيدة: بطاقات الأقسام في الرئيسية */
   .category-cards .cat-card { animation: kl-rise .8s var(--ease-out) both; }
   .category-cards .cat-card:nth-child(2) { animation-delay: .08s; }
   .category-cards .cat-card:nth-child(3) { animation-delay: .16s; }
   @keyframes kl-rise { from { opacity: 0; transform: translateY(22px); } }
 }
 
-/* ---------- جودة أساسية ---------- */
 :focus-visible {
   outline: 2px solid #2f9bf0;
   outline-offset: 3px;
@@ -5776,10 +5503,6 @@ body[data-page="reels"]::before { display: none; }
   }
 }
 
-/* =====================================================================
-   بطاقة المنتج: تصميم جديد بنفس المحتوى
-   (صورة • شارة • قسم • اسم • وصف • مواصفات • ألوان • تقييم • سعر • سلة • تفاصيل)
-   ===================================================================== */
 .card {
   border-radius: 22px;
   border: 1px solid #e1ecf4;
@@ -5789,7 +5512,6 @@ body[data-page="reels"]::before { display: none; }
     0 12px 26px -18px rgba(18, 76, 130, .30);
 }
 
-/* الإطار المتدرج: يظهر عند المرور فقط بدل الدوران الدائم */
 .card::before {
   background: conic-gradient(
     from var(--sweep-angle),
@@ -5810,7 +5532,6 @@ body[data-page="reels"]::before { display: none; }
   animation-play-state: running;
 }
 
-/* منصة الصورة: ضوء ناعم وكبسولات الشعار خلف المنتج */
 .card .card-img {
   position: relative;
   display: grid;
@@ -5864,7 +5585,6 @@ body[data-page="reels"]::before { display: none; }
 
 .card:hover .card-img img { transform: translateY(-5px) scale(1.045); }
 
-/* الشارة */
 .card .badge {
   top: 14px;
   right: 14px;
@@ -5892,7 +5612,6 @@ body[data-page="reels"]::before { display: none; }
   background: #2db9e1;
 }
 
-/* الجسم: عمود يثبّت السعر وزر التفاصيل أسفل البطاقة دائماً */
 .card .card-body {
   display: flex;
   flex-direction: column;
@@ -5954,7 +5673,6 @@ body[data-page="reels"]::before { display: none; }
   color: #75889b;
 }
 
-/* المواصفات: لوح هادئ بصفوف مفصولة */
 .card .card-specs {
   margin: 0;
   padding: 4px 13px;
@@ -5974,7 +5692,6 @@ body[data-page="reels"]::before { display: none; }
 .card .card-specs li span { color: #6d8296; }
 .card .card-specs li b { color: #1b3956; max-width: 62%; }
 
-/* الألوان والتقييم */
 .card .dots { gap: 7px; min-height: 18px; }
 
 .card .dots i {
@@ -5987,7 +5704,6 @@ body[data-page="reels"]::before { display: none; }
 
 .card .dots i:hover { transform: scale(1.18); }
 
-/* السعر وزر السلة */
 .card .card-foot {
   align-items: center;
   justify-content: space-between;
@@ -6028,7 +5744,6 @@ body[data-page="reels"]::before { display: none; }
 
 .card .icon-add:active { transform: scale(.94); }
 
-/* زر التفاصيل */
 .card .btn-outline {
   display: flex;
   align-items: center;
@@ -6059,7 +5774,6 @@ body[data-page="reels"]::before { display: none; }
   }
 }
 
-/* الهاتف: عمودان، فتقل المسافات ويُخفى ما يزيد عن الحاجة */
 @media (max-width: 600px) {
   .card { border-radius: 18px; }
 
@@ -6090,10 +5804,6 @@ body[data-page="reels"]::before { display: none; }
   .card .btn-outline { padding: 8px 4px; font-size: 11.5px; border-radius: 12px; }
 }
 
-/* =====================================================================
-   السلة: تصميم جديد بنفس المحتوى
-   (عنوان • إغلاق • منتجات بصورة/اسم/لون/سعر/كمية/حذف • المجموع • إتمام الطلب)
-   ===================================================================== */
 .cart-drawer {
   width: 430px;
   max-width: 94vw;
@@ -6105,7 +5815,6 @@ body[data-page="reels"]::before { display: none; }
 
 .cart-drawer.open { left: 0; }
 
-/* الرأس */
 .cart-drawer .cart-head {
   position: relative;
   padding: 18px 20px;
@@ -6176,7 +5885,6 @@ body[data-page="reels"]::before { display: none; }
   transform: rotate(90deg);
 }
 
-/* المنتجات: بطاقة لكل منتج */
 .cart-drawer .cart-items {
   display: flex;
   flex-direction: column;
@@ -6314,7 +6022,6 @@ body[data-page="reels"]::before { display: none; }
 .cart-drawer .ci-del .ic { width: 15px; height: 15px; margin: 0; }
 .cart-drawer .ci-del:hover { background: #fdeeee; }
 
-/* السلة الفارغة */
 .cart-drawer .cart-items .empty {
   margin: auto 0;
   padding: 40px 20px;
@@ -6341,7 +6048,6 @@ body[data-page="reels"]::before { display: none; }
 .cart-drawer .cart-items .empty span { font-size: 17px; font-weight: 800; color: #17324d; }
 .cart-drawer .cart-items .empty small { font-size: 13px; color: #7a8da1; }
 
-/* التذييل: المجموع وزر إتمام الطلب */
 .cart-drawer .cart-foot {
   padding: 18px 20px 20px;
   background: #fff;
@@ -6402,9 +6108,6 @@ body[data-page="reels"]::before { display: none; }
   .cart-drawer .cart-foot { padding: 14px 16px 16px; }
 }
 
-/* =====================================================================
-   نافذة إتمام الطلب
-   ===================================================================== */
 .modal {
   align-items: center;
   justify-content: center;
@@ -6589,7 +6292,6 @@ body[data-page="reels"]::before { display: none; }
   box-shadow: 0 0 0 4px rgba(224, 90, 90, .13);
 }
 
-/* الملخص */
 #orderForm .summary {
   padding: 14px 18px 16px;
   margin: 0;
@@ -6691,9 +6393,6 @@ body[data-page="reels"]::before { display: none; }
 
 @keyframes kl-sheet { from { transform: translateY(100%); } }
 
-/* =====================================================================
-   صفحة المنتج
-   ===================================================================== */
 .crumbs {
   display: flex;
   flex-wrap: wrap;
@@ -6811,7 +6510,6 @@ body[data-page="reels"]::before { display: none; }
   line-height: 1.45;
   color: #12395f;
 }
-
 
 .pd .pd-desc { margin: 12px 0 20px; line-height: 1.95; color: #657a8f; }
 
@@ -6995,7 +6693,6 @@ body[data-page="reels"]::before { display: none; }
   border-end-end-radius: 14px;
 }
 
-/* شريط الشراء السفلي على الجوال */
 .pd-sticky {
   position: fixed;
   inset-inline: 0;
@@ -7048,9 +6745,6 @@ body[data-page="reels"]::before { display: none; }
   .specs th, .specs td { padding: 12px 14px; font-size: 13.5px; }
 }
 
-/* =====================================================================
-   صفحة الريلز
-   ===================================================================== */
 body[data-page="reels"] { background: #05090e; }
 
 body[data-page="reels"] main.reels-page {
@@ -7060,7 +6754,6 @@ body[data-page="reels"] main.reels-page {
     #05090e;
 }
 
-/* الترويسة: زر رجوع زجاجي وعنوان صغير */
 body[data-page="reels"] main.reels-page .reels-page-heading {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -7115,7 +6808,6 @@ body[data-page="reels"] main.reels-page .reels-page-heading p {
   text-shadow: 0 1px 6px rgba(0, 0, 0, .5);
 }
 
-/* المسرح */
 body[data-page="reels"] main.reels-page #reelsViewer {
   position: absolute;
   inset: 0;
@@ -7318,7 +7010,6 @@ body[data-page="reels"] main.reels-page .reels-empty {
 
 body[data-page="reels"] main.reels-page .reels-empty p { color: rgba(255, 255, 255, .7); }
 
-/* الحاسوب: مسرح عمودي مؤطّر في وسط الشاشة */
 @media (min-width: 1000px) {
   body[data-page="reels"] main.reels-page {
     --stage-h: calc(100dvh - 56px);
@@ -7350,7 +7041,6 @@ body[data-page="reels"] main.reels-page .reels-empty p { color: rgba(255, 255, 2
   }
 }
 
-/* المواصفات كبلاطات: اسم المواصفة فوق قيمتها */
 .specs table,
 .specs tbody { display: block; width: 100%; }
 
@@ -7389,10 +7079,6 @@ body[data-page="reels"] main.reels-page .reels-empty p { color: rgba(255, 255, 2
 
 #orderForm .fld-area textarea { min-height: 44px; }
 
-/* =====================================================
-   شريط البحث الجديد (تصميم Uiverse - Smit-Prajapati)
-   أسماء الأصناف مسبوقة بـ kl- لتجنب التعارض مع بقية الموقع
-   ===================================================== */
 .search.kl-search {
   position: relative;
   isolation: isolate;
@@ -7523,11 +7209,6 @@ body[data-page="reels"] main.reels-page .reels-empty p { color: rgba(255, 255, 2
   .search.kl-search .kl-search-btn { width: 42px; height: 42px; flex-basis: auto; font-size: inherit; }
 }
 
-
-/* =====================================================
-   شريط الأقسام الجديد (تصميم Uiverse - mymiamo)
-   أسماء الأصناف مسبوقة بـ kl- لتجنب التعارض مع بقية الموقع
-   ===================================================== */
 .kl-menu-wrap {
   position: relative;
   z-index: 25;
@@ -7634,7 +7315,6 @@ body[data-page="reels"] main.reels-page .reels-empty p { color: rgba(255, 255, 2
   outline-offset: -3px;
 }
 
-/* الجوال: الأقسام في صفين (3 × 2) لتظهر كلها بأسمائها كاملة */
 @media (max-width: 700px) {
   .kl-menu { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 7px; width: calc(100% - 16px); border-radius: 26px; }
   .kl-menu a { flex: none; justify-content: center; padding: 10px 4px 8px; border-radius: 20px; }
@@ -7642,8 +7322,6 @@ body[data-page="reels"] main.reels-page .reels-empty p { color: rgba(255, 255, 2
   .kl-menu a .kl-lbl { font-size: clamp(0.72rem, 3.4vw, 0.84rem); margin-top: 5px; line-height: 1.3; white-space: nowrap; }
 }
 
-
-/* ===== نتائج البحث في الصفحة الرئيسية ===== */
 body.kl-searching #promoSlider,
 body.kl-searching #categories,
 body.kl-searching .brands-section,
@@ -7655,10 +7333,6 @@ body.kl-searching #homeReelsSection {
 #homeSearchResults { margin-top: 18px; }
 #homeSearchResults .section-head h2 { overflow-wrap: anywhere; }
 
-
-/* =====================================================
-   هيدر مميز - كتلة زرقاء عميقة موحدة (الشريط العلوي + الهيدر + الأقسام)
-   ===================================================== */
 .topbar.kl-topbar {
   background: #04193a;
   border-bottom: 1px solid rgba(45, 180, 224, .28);
@@ -7678,7 +7352,6 @@ body.kl-searching #homeReelsSection {
   background: linear-gradient(180deg, #05224a 0%, #0a4796 100%);
 }
 
-/* موجات الإشارة الزخرفية (نفس فكرة صفحة الترحيب) */
 .header.kl-header::before {
   content: "";
   position: absolute;
@@ -7729,7 +7402,6 @@ body.kl-searching #homeReelsSection {
   transform: translateY(-1px);
 }
 
-/* شريط الأقسام يكمل الكتلة الزرقاء */
 .kl-menu-wrap {
   background: #0a4796;
   border-radius: 0 0 32px 32px;
@@ -7744,10 +7416,6 @@ body.kl-searching #homeReelsSection {
   .kl-menu-wrap { border-radius: 0 0 24px 24px; padding-bottom: 16px; margin-bottom: 14px; }
 }
 
-
-/* =====================================================
-   تذييل الموقع + أيقونات التواصل الاجتماعي
-   ===================================================== */
 .footer.kl-footer {
   margin-top: 36px;
   padding: 34px 18px 22px;
@@ -7843,10 +7511,6 @@ body.kl-searching #homeReelsSection {
   .kl-soc:hover { transform: none; }
 }
 
-
-/* =====================================================
-   السعر بعد الخصم (يظهر عند تحديده من لوحة الإدارة)
-   ===================================================== */
 .old-price {
   margin-inline-start: 8px;
   color: #8a97aa;
@@ -7870,11 +7534,6 @@ body.kl-searching #homeReelsSection {
 .pd-price .old-price { font-size: .5em; }
 .pd-price .discount-pct { font-size: .42em; padding: 3px 10px; }
 
-/* =====================================================================
-   بنرات الصور: يأخذ البانر قياس الصورة نفسها (بدون قص) ومتوافق مع الجوال
-   - الشريحة الظاهرة تبقى في تدفق الصفحة فيتحدد ارتفاع البانر من الصورة
-   - لا تحتاج لأي قياس ثابت: ارفع الصورة بالقياس الذي تريده
-   ===================================================================== */
 #promoSlider.has-banner-images,
 .category-promo.has-banner-images {
   position: relative;
@@ -7886,7 +7545,6 @@ body.kl-searching #homeReelsSection {
   background: #edf6ff;
 }
 
-/* الغلاف الداخلي لبنرات الأقسام يعود لتدفق الصفحة */
 .category-promo.has-banner-images .category-promo-slides {
   position: relative !important;
   inset: auto !important;
@@ -7894,7 +7552,6 @@ body.kl-searching #homeReelsSection {
   height: auto !important;
 }
 
-/* الشرائح غير الظاهرة تبقى فوق بعضها مخفية (للتلاشي) */
 #promoSlider.has-banner-images .promo-slide,
 .category-promo.has-banner-images .category-promo-slide.has-image {
   position: absolute !important;
@@ -7907,7 +7564,6 @@ body.kl-searching #homeReelsSection {
   pointer-events: none;
 }
 
-/* الشريحة الظاهرة هي التي تحدد الارتفاع */
 #promoSlider.has-banner-images .promo-slide.active,
 .category-promo.has-banner-images .category-promo-slide.has-image.active {
   position: relative !important;
@@ -7932,11 +7588,10 @@ body.kl-searching #homeReelsSection {
   height: auto !important;
   max-height: 80vh;
   object-fit: contain !important;
-  /* مساحة مبدئية قبل تحميل الصورة حتى لا تقفز الصفحة */
+
   aspect-ratio: auto 8 / 3;
 }
 
-/* الجوال: حواف أصغر وأسهم/نقاط مناسبة للمس بدون تغطية الصورة */
 @media (max-width: 700px) {
   #promoSlider.has-banner-images,
   .category-promo.has-banner-images {
@@ -7968,23 +7623,17 @@ body.kl-searching #homeReelsSection {
   }
 }
 
-/* =====================================================
-   ألوان الهيدر: فيروزي + أزرق فاتح
-   (هذه الكتلة آخر الملف لتتغلب على ألوان الهيدر الكحلية السابقة)
-   لتعديل الألوان غيّر القيم الأربع التالية فقط
-   ===================================================== */
 :root {
-  --kl-turq:       #0a9fb0;  /* فيروزي (أعلى الهيدر) */
-  --kl-turq-mid:   #1ab3cf;  /* فيروزي مائل للسماوي */
-  --kl-sky:        #3cb8ee;  /* أزرق فاتح (أسفل الهيدر) */
-  --kl-turq-deep:  #087f93;  /* فيروزي غامق للنصوص على الخلفية البيضاء */
+  --kl-turq:       #0a9fb0;
+  --kl-turq-mid:   #1ab3cf;
+  --kl-sky:        #3cb8ee;
+  --kl-turq-deep:  #087f93;
 }
 
 .header.kl-header {
   background: linear-gradient(180deg, var(--kl-turq) 0%, var(--kl-turq-mid) 48%, var(--kl-sky) 100%);
 }
 
-/* موجات الإشارة الزخرفية بلون أبيض شفاف */
 .header.kl-header::before {
   background: radial-gradient(circle at center,
     transparent 0 38%, rgba(255, 255, 255, .20) 38.4% 39.4%,
@@ -7993,7 +7642,6 @@ body.kl-searching #homeReelsSection {
     transparent 71.8%);
 }
 
-/* النصوص: أبيض مع ظل خفيف لزيادة الوضوح على الخلفية الفاتحة */
 .kl-header .logo-text b,
 .kl-header .header-slogan b {
   color: #fff;
@@ -8014,7 +7662,6 @@ body.kl-searching #homeReelsSection {
   box-shadow: 0 8px 22px rgba(0, 70, 90, .22), 0 0 0 4px rgba(255, 255, 255, .28);
 }
 
-/* زر السلة */
 .kl-header .cart-btn {
   background: rgba(255, 255, 255, .2);
   border: 1px solid rgba(255, 255, 255, .55);
@@ -8025,7 +7672,6 @@ body.kl-searching #homeReelsSection {
   background: rgba(255, 255, 255, .34);
 }
 
-/* مربع البحث بدرجات فيروزية فاتحة */
 .search.kl-search {
   background: linear-gradient(135deg, rgb(215, 246, 250) 0%, rgb(190, 235, 247) 100%);
 }
@@ -8058,7 +7704,6 @@ body.kl-searching #homeReelsSection {
 }
 .search.kl-search .kl-search-btn:focus-visible { outline-color: var(--kl-turq-deep); }
 
-/* شريط الأقسام يكمل الهيدر باللون الأزرق الفاتح */
 .kl-menu-wrap {
   background: var(--kl-sky);
 }
@@ -8082,10 +7727,6 @@ body.kl-searching #homeReelsSection {
 
 .kl-menu a:focus-visible { outline-color: #fff; }
 
-
-/* =====================================================
-   التوفر + ذاكرة الجهاز (المتجر)
-   ===================================================== */
 .kl-oos-badge {
   position: absolute;
   top: 10px;
@@ -8102,7 +7743,6 @@ body.kl-searching #homeReelsSection {
 .card.is-oos .card-img img { opacity: .45; filter: grayscale(.85); }
 .card.is-oos .icon-add { background: #b9c4cf; cursor: not-allowed; pointer-events: none; }
 
-/* ذاكرات المنتج على البطاقة */
 .kl-stor { display: flex; flex-wrap: wrap; gap: 5px; margin: 6px 0 4px; }
 .kl-stor-chip {
   font-size: 11px;
@@ -8121,7 +7761,6 @@ body.kl-searching #homeReelsSection {
   text-decoration: line-through;
 }
 
-/* اختيار الذاكرة في صفحة المنتج */
 .kl-stor-pick { display: flex; flex-wrap: wrap; gap: 8px; }
 .kl-stor-opt {
   min-width: 76px;
@@ -8170,17 +7809,11 @@ body.kl-searching #homeReelsSection {
   filter: grayscale(.4);
 }
 
-/* السلة */
 .cart-item.is-unavail { background: #fff4f5; }
 .ci-storage { display: block; color: #5d7186; }
 .ci-warn { display: block; color: #c4263d; font-weight: 700; font-size: 12px; margin-top: 2px; }
 
 .kl-from { font-size: 11px; font-weight: 600; color: #6d8296; margin-inline-end: 2px; }
-
-/* =====================================================================
-   البانرات: الرئيسي 1200×500 (نسبة 12:5) وبانرات الأقسام 1200×250 (24:5)
-   متجاوبة مع الجوال: تحافظ على النسبة وتصغر مع عرض الشاشة
-   ===================================================================== */
 
 .promo-slider.has-banner-images,
 .category-promo.has-banner-images {
@@ -8323,13 +7956,8 @@ body.kl-searching #homeReelsSection {
   .strip-slide, .strip-slide.active { transition: none; }
 }
 
-/* إخفاء شريط المؤقت أسفل البانر الرئيسي */
 .promo-progress { display: none !important; }
 
-
-/* =====================================================
-   فروع المتجر في التذييل
-   ===================================================== */
 .kl-branches { margin-bottom: 30px; }
 
 .kl-branches h3 {
@@ -8410,7 +8038,6 @@ body.kl-searching #homeReelsSection {
   .kl-branch:hover { transform: none; }
 }
 
-/* شريط اسم القسم تحت البانر في الصفحة الرئيسية: الاسم يمين و«عرض المزيد» يسار */
 .home-category-section .section-head.cat-bar {
   flex-direction: row;
   align-items: center;
@@ -8435,10 +8062,6 @@ body.kl-searching #homeReelsSection {
   .home-category-section .cat-bar h2 { font-size: 19px; }
 }
 
-
-/* =====================================================
-   قسم «كلمات ريلز» في الصفحة الرئيسية - تصميم عرض مميز
-   ===================================================== */
 #homeReelsSection:not([hidden]) {
   position: relative;
   isolation: isolate;
@@ -8511,7 +8134,6 @@ body.kl-searching #homeReelsSection {
   box-shadow: 0 12px 26px rgba(0, 0, 0, .24);
 }
 
-/* الشريط الأفقي */
 #homeReelsTrack {
   display: flex !important;
   gap: 14px;
@@ -8527,7 +8149,6 @@ body.kl-searching #homeReelsSection {
 }
 #homeReelsTrack::-webkit-scrollbar { display: none; }
 
-/* بطاقة الريلز */
 #homeReelsTrack .reel-tile {
   position: relative;
   flex: 0 0 170px;
@@ -8554,7 +8175,6 @@ body.kl-searching #homeReelsSection {
 }
 #homeReelsTrack .reel-tile:hover video { transform: scale(1.06); }
 
-/* تعتيم خفيف أعلى وأسفل البطاقة */
 #homeReelsTrack .reel-tile::after {
   content: "";
   position: absolute;
@@ -8565,7 +8185,6 @@ body.kl-searching #homeReelsSection {
     linear-gradient(to top, rgba(0, 0, 0, .82) 0%, rgba(0, 0, 0, .25) 38%, transparent 60%);
 }
 
-/* رقم المقطع */
 #homeReelsTrack .reel-num {
   position: absolute;
   z-index: 2;
@@ -8584,7 +8203,6 @@ body.kl-searching #homeReelsSection {
   color: #fff;
 }
 
-/* زر التشغيل في المنتصف */
 #homeReelsTrack .reel-play-icon {
   position: absolute;
   z-index: 2;
@@ -8615,7 +8233,6 @@ body.kl-searching #homeReelsSection {
   background: rgba(255, 255, 255, .38);
 }
 
-/* عنوان المقطع */
 #homeReelsTrack .reel-tile > span {
   z-index: 2;
   padding: 36px 14px 16px;
@@ -8631,7 +8248,6 @@ body.kl-searching #homeReelsSection {
   overflow: hidden;
 }
 
-/* حالة عدم وجود ريلز */
 #homeReelsSection .reels-empty {
   background: rgba(255, 255, 255, .14);
   border: 1px dashed rgba(255, 255, 255, .5);
@@ -8671,10 +8287,6 @@ body.kl-searching #homeReelsSection {
   #homeReelsTrack .reel-tile:hover { transform: none; }
 }
 
-
-/* =====================================================
-   تسوق حسب الماركة - أيقونات دائرية
-   ===================================================== */
 .brands-section {
   padding: 26px 22px 12px;
   border-radius: 30px;
@@ -8732,7 +8344,6 @@ body.kl-searching #homeReelsSection {
   transform: none;
 }
 
-/* الدائرة */
 .brands-section .brands-track .brand-logo {
   position: relative;
   display: grid;
@@ -8774,7 +8385,6 @@ body.kl-searching #homeReelsSection {
 .brands-section .brands-track .brand-item:hover .brand-logo img { transform: scale(1.06); }
 .brands-section .brands-track .brand-item:focus-visible { outline: none; }
 
-/* الماركة المختارة */
 .brands-section .brands-track .brand-item.active .brand-logo {
   transform: translateY(-4px);
   box-shadow:
@@ -8801,14 +8411,12 @@ body.kl-searching #homeReelsSection {
   line-height: 1;
 }
 
-/* دائرة «الكل» */
 .brands-section .brands-track .brand-logo.brand-all {
   background: linear-gradient(135deg, #0cb0c4 0%, #087f93 100%);
   box-shadow: 0 10px 22px rgba(8, 127, 147, .30);
 }
 .brands-section .brands-track .brand-logo.brand-all img { width: 46%; height: 46%; }
 
-/* اسم الماركة */
 .brands-section .brands-track .brand-name,
 .brands-section .brands-track .brand-item b {
   max-width: 86px;
@@ -8825,7 +8433,6 @@ body.kl-searching #homeReelsSection {
 .brands-section .brands-track .brand-item.active .brand-name,
 .brands-section .brands-track .brand-item.active b { color: #087f93; }
 
-/* الحاسوب: تُعرض كل الدوائر مرتبة في وسط القسم */
 @media (min-width: 900px) {
   .brands-section .brands-track {
     flex-wrap: wrap;
@@ -8854,10 +8461,6 @@ body.kl-searching #homeReelsSection {
   .brands-section .brands-track .brand-logo img { transition: none; }
 }
 
-
-/* =====================================================
-   علامة الخصم على بطاقة المنتج
-   ===================================================== */
 .kl-sale-badge {
   position: absolute;
   top: 12px;
@@ -8885,7 +8488,6 @@ body.kl-searching #homeReelsSection {
   stroke-width: 2;
 }
 
-/* إن كان المنتج غير متوفر تنزل علامة الخصم تحت علامة «غير متوفر» */
 .card.is-oos .kl-sale-badge { top: 44px; }
 
 @keyframes kl-sale-pulse {
@@ -8902,9 +8504,6 @@ body.kl-searching #homeReelsSection {
   .kl-sale-badge { animation: none; }
 }
 
-/* =====================================================
-   الوضع الليلي - زر التبديل والانتقال الناعم
-   ===================================================== */
 .header-tools {
   display: flex;
   align-items: center;
@@ -8958,7 +8557,6 @@ html[data-theme="dark"] .theme-toggle { background: rgba(255, 255, 255, .12); bo
   .theme-toggle { width: 42px; height: 42px; }
 }
 
-/* انتقال ناعم عند التبديل بين الوضعين */
 html.kl-theme-anim,
 html.kl-theme-anim *,
 html.kl-theme-anim *::before,
@@ -8971,9 +8569,6 @@ html.kl-theme-anim *::after {
   html.kl-theme-anim, html.kl-theme-anim *, html.kl-theme-anim *::before, html.kl-theme-anim *::after { transition: none !important; }
 }
 
-/* =====================================================
-   الوضع الليلي - الألوان
-   ===================================================== */
 html[data-theme="dark"] {
   color-scheme: dark;
   --bg: #0b141c;
@@ -9396,8 +8991,6 @@ html[data-theme="dark"] .card.is-oos .card-img img {
   opacity: .4;
 }
 
-
-/* الجوال: زر الوضع الليلي في أعلى الترويسة جهة اليسار */
 @media (max-width: 700px) {
   .header.kl-header { position: relative; }
 
@@ -9409,14 +9002,9 @@ html[data-theme="dark"] .card.is-oos .card-img img {
     z-index: 5;
   }
 
-  /* مساحة للزر كي لا يغطي الشعار */
   .kl-header .logo { max-width: calc(100% - 58px); }
 }
-/* =====================================================================
-   صور المنتجات: تظهر كاملة بنسبتها الأصلية بدون قص أو تشويه
-   - البطاقات: إطار موحّد القياس والصورة تملؤه بالكامل (بدون حواشي أو ظل)
-   - صفحة المنتج: الإطار يأخذ قياس الصورة نفسها
-   ===================================================================== */
+
 .card .card-img,
 html[data-theme="dark"] .card .card-img,
 html[data-theme="dark"] .card-img {
@@ -9472,10 +9060,6 @@ html[data-theme="dark"] .pd .pd-main {
   .pd .pd-main { padding: 0; }
 }
 
-/* =====================================================================
-   إطار متدرج متحرك (Animated Gradient Border) لكروت المنتجات
-   تدرج ألوان يجري حول الكرت باستمرار + توهج ناعم عند المرور
-   ===================================================================== */
 .card {
   border: 0;
 }
@@ -9498,7 +9082,6 @@ html[data-theme="dark"] .pd .pd-main {
   transition: filter .35s ease;
 }
 
-/* لمعان ناعم يمرّ فوق الإطار */
 .card::after {
   content: "";
   position: absolute;
@@ -9538,7 +9121,6 @@ html[data-theme="dark"] .pd .pd-main {
     0 0 26px -6px rgba(124, 92, 240, .35);
 }
 
-/* المنتج غير المتوفر: إطار رمادي هادئ بدون حركة */
 .card.is-oos::before {
   background: linear-gradient(135deg, #cfd9e2 0%, #a9b8c5 100%);
   animation: none;
@@ -9549,21 +9131,14 @@ html[data-theme="dark"] .card.is-oos::before {
   background: linear-gradient(135deg, #3a4d5e 0%, #2a3a48 100%);
 }
 
-/* احترام من يفضّل تقليل الحركة: إطار متدرج ثابت */
 @media (prefers-reduced-motion: reduce) {
   .card::before { animation: none; }
   .card::after { display: none; }
 }
 
-/* =====================================================
-   مساعد اختيار الجهاز (هاتف / تابلت)
-   ألوان الشعار: سماوي #14b4ea ورمادي فحمي #0f2b40
-   ===================================================== */
-
 .kf-ic { width: 20px; height: 20px; flex-shrink: 0; }
 body.kf-lock { overflow: hidden; }
 
-/* ---------- بطاقة الدعوة ---------- */
 .kf-cta {
   position: relative;
   isolation: isolate;
@@ -9583,7 +9158,6 @@ body.kf-lock { overflow: hidden; }
 }
 .kf-cta[hidden] { display: none; }
 
-/* قرص الشعار: دائرة رمادية بثقب في وسطها */
 .kf-cta::before {
   content: "";
   position: absolute;
@@ -9661,7 +9235,6 @@ body.kf-lock { overflow: hidden; }
 .kf-cta-points li { display: inline-flex; align-items: center; gap: 6px; }
 .kf-cta-points .kf-ic { width: 15px; height: 15px; stroke-width: 3; color: #14b4ea; }
 
-/* خطوات متصلة بخط، تنتهي بكبسولة سماوية */
 .kf-steps {
   position: relative;
   list-style: none;
@@ -9711,7 +9284,6 @@ body.kf-lock { overflow: hidden; }
 .kf-steps b .kf-ic { width: 17px; height: 17px; stroke-width: 3; }
 .kf-steps li.end b { background: #0f2b40; color: #14b4ea; }
 
-/* نسخة مختصرة داخل صفحة الأجهزة الذكية */
 .kf-cta.kf-slim {
   grid-template-columns: 1fr auto;
   margin: 0 0 24px;
@@ -9728,7 +9300,6 @@ body.kf-lock { overflow: hidden; }
 .kf-slim .kf-cta-btn { padding: 12px 24px; font-size: 15px; white-space: nowrap; }
 .kf-slim::before { width: 210px; height: 210px; top: -100px; }
 
-/* ---------- النافذة ---------- */
 .kf-modal { position: fixed; inset: 0; z-index: 150; display: none; }
 .kf-modal.open { display: block; }
 
@@ -9772,7 +9343,6 @@ body.kf-lock { overflow: hidden; }
 @keyframes kfRise { from { opacity: 0; transform: translateY(44px); } to { opacity: 1; transform: none; } }
 @keyframes kfPop { from { opacity: 0; transform: translate(-50%, -46%); } to { opacity: 1; transform: translate(-50%, -50%); } }
 
-/* رأس داكن بلون الهوية */
 .kf-head {
   position: relative;
   isolation: isolate;
@@ -9873,7 +9443,6 @@ body.kf-lock { overflow: hidden; }
 .kf-foot:empty { display: none; }
 .kf-foot-end { display: flex; gap: 10px; flex-wrap: wrap; }
 
-/* ---------- الأزرار ---------- */
 .kf-btn {
   display: inline-flex;
   align-items: center;
@@ -9895,7 +9464,6 @@ body.kf-lock { overflow: hidden; }
 .kf-btn.wa { background: linear-gradient(135deg, #25c162, #1a9a4d); box-shadow: 0 8px 18px -8px rgba(26, 154, 77, .6); }
 .kf-btn.sm { padding: 9px 18px; font-size: 13.5px; border-radius: 11px; }
 
-/* ---------- خيارات الأسئلة ---------- */
 .kf-grid { display: grid; gap: 14px; margin-top: 22px; }
 .kf-types { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 .kf-budgets { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
@@ -9949,7 +9517,6 @@ body.kf-lock { overflow: hidden; }
 .kf-types .kf-ico .kf-ic { width: 32px; height: 32px; }
 .kf-types .kf-opt strong { font-size: 22px; }
 
-/* مؤشر مستوى الميزانية: أعمدة تتصاعد */
 .kf-level { display: flex; align-items: flex-end; gap: 4px; height: 26px; margin-bottom: 12px; }
 .kf-level i { display: block; width: 8px; border-radius: 3px; background: #d5e3f0; transition: background .18s ease; }
 .kf-level i:nth-child(1) { height: 9px; }
@@ -10036,7 +9603,6 @@ body.kf-lock { overflow: hidden; }
 .kf-switch input:checked + .kf-track::after { inset-inline-start: 21px; }
 .kf-switch input:focus-visible + .kf-track { outline: 3px solid rgba(47, 155, 240, .6); outline-offset: 2px; }
 
-/* ---------- النتائج ---------- */
 .kf-sum { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
 .kf-sum-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .kf-tag {
@@ -10193,7 +9759,6 @@ body.kf-lock { overflow: hidden; }
   .kf-rc.first .kf-specs { max-width: 360px; }
 }
 
-/* ---------- الجوال ---------- */
 @media (max-width: 760px) {
   .kf-cta { grid-template-columns: 1fr; gap: 24px; padding: 30px 22px; border-radius: 24px; }
   .kf-cta-copy h2 { font-size: 25px; }
@@ -10231,7 +9796,6 @@ body.kf-lock { overflow: hidden; }
   .kf-foot-end .kf-btn:not(.wa) { display: none; }
 }
 
-/* ---------- الوضع الليلي ---------- */
 html[data-theme="dark"] .kf-cta { border: 1px solid rgba(255, 255, 255, .08); box-shadow: 0 22px 44px -22px rgba(0, 0, 0, .8); }
 html[data-theme="dark"] .kf-sheet { background: #0f1b26; color: #e6f0f7; box-shadow: 0 -14px 44px rgba(0, 0, 0, .7); }
 html[data-theme="dark"] .kf-body { background: #0b141c; }
@@ -10266,10 +9830,6 @@ html[data-theme="dark"] .kf-price b { color: #6ec1ff; }
   .kf-cta-btn, .kf-btn, .kf-opt, .kf-chip, .kf-tick, .kf-track, .kf-track::after, .kf-rc { transition: none; }
 }
 
-
-/* =====================================================
-   التذييل بنفس ألوان الهيدر (فيروزي إلى سماوي)
-   ===================================================== */
 .footer.kl-footer {
   position: relative;
   overflow: hidden;
@@ -10278,7 +9838,6 @@ html[data-theme="dark"] .kf-price b { color: #6ec1ff; }
   color: #effcff;
 }
 
-/* موجات الإشارة الزخرفية كما في الهيدر */
 .footer.kl-footer::before {
   content: "";
   position: absolute;
@@ -10300,7 +9859,6 @@ html[data-theme="dark"] .kf-price b { color: #6ec1ff; }
   text-shadow: 0 1px 3px rgba(0, 70, 90, .4);
 }
 
-/* بطاقات الفروع: زجاج فيروزي داكن قليلاً ليبقى النص واضحاً */
 .kl-footer .kl-branch {
   background: rgba(0, 78, 96, .26);
   border-color: rgba(255, 255, 255, .45);
@@ -10344,15 +9902,10 @@ html[data-theme="dark"] .kl-footer .kl-branch,
 html[data-theme="dark"] .kl-footer .kl-soc { background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .26); }
 html[data-theme="dark"] .kl-footer .kl-branch-pin { background: #1677e8; }
 
-
-/* =====================================================
-   زر السلة العائم (الجوال): بألوان الهيدر
-   عنصر مستقل خارج الهيدر حتى لا يُغطّى ولا يُقصّ
-   ===================================================== */
 .cart-fab { display: none; }
 
 @media screen and (max-width: 600px) {
-  /* إخفاء زر الهيدر القديم الذي كان يُثبَّت داخل الهيدر */
+
   .header .header-tools #cartBtn { display: none !important; }
 
   .cart-fab {
@@ -10409,12 +9962,10 @@ html[data-theme="dark"] .kl-footer .kl-branch-pin { background: #1677e8; }
 
   .cart-fab.bump { animation: kfCartBump .5s ease; }
 
-  /* صفحة المنتج: يرتفع الزر ليبقى فوق شريط الشراء السفلي */
   body[data-page="product"] .cart-fab { bottom: calc(92px + env(safe-area-inset-bottom, 0px)); }
-  /* صفحة الريلز بملء الشاشة: لا حاجة للزر */
+
   body[data-page="reels"] .cart-fab { display: none; }
 
-  /* مساحة أسفل التذييل كي لا يغطي الزر نص الحقوق */
   .footer.kl-footer { padding-bottom: 92px; }
 
   html[data-theme="dark"] .cart-fab {
@@ -10437,10 +9988,6 @@ html[data-theme="dark"] .kl-footer .kl-branch-pin { background: #1677e8; }
   .cart-fab, .cart-fab.bump { transition: none; animation: none; }
 }
 
-
-/* =====================================================
-   تبديل البانرات كل ثانيتين: تلاشٍ أسرع ليظهر كل بانر بوضوح
-   ===================================================== */
 #promoSlider .promo-slide { transition: opacity .45s var(--ease-soft), visibility 0s linear .45s; }
 #promoSlider .promo-slide.active { transition: opacity .45s var(--ease-soft), visibility 0s; }
 
@@ -10454,17 +10001,10 @@ html[data-theme="dark"] .kl-footer .kl-branch-pin { background: #1677e8; }
 .strip-slide { transition: opacity .45s ease, visibility 0s linear .45s; }
 .strip-slide.active { transition: opacity .45s ease, visibility 0s; }
 
-/* =====================================================================
-   طبقة الحركة السلسة (إضافة فقط في آخر الملف)
-   - ظهور تدريجي للأقسام والبطاقات عند التمرير
-   - دخول متتابع لنصوص البانر الرئيسي
-   - شريط تقدم التمرير • ظهور الصور بنعومة • ضغطة لمسية للأزرار
-   ===================================================================== */
 :root { --kl-ease: cubic-bezier(.22, 1, .36, 1); }
 
 @media (prefers-reduced-motion: no-preference) {
 
-  /* ---------- الظهور عند التمرير ---------- */
   html.kl-motion .kl-reveal:not(.kl-in) { opacity: 0; }
 
   html.kl-motion .kl-reveal.kl-in {
@@ -10483,7 +10023,6 @@ html[data-theme="dark"] .kl-footer .kl-branch-pin { background: #1677e8; }
     from { opacity: 0; transform: translate3d(0, 14px, 0) scale(.86); }
   }
 
-  /* ---------- البانر الرئيسي: النصوص تدخل واحداً بعد الآخر ---------- */
   html.kl-motion #promoSlider .promo-copy > * {
     opacity: 0;
     transform: translate3d(0, 24px, 0);
@@ -10499,13 +10038,11 @@ html[data-theme="dark"] .kl-footer .kl-branch-pin { background: #1677e8; }
   html.kl-motion #promoSlider .promo-slide.active .promo-copy > :nth-child(3) { transition-delay: .44s, .44s, 0s, 0s, 0s; }
   html.kl-motion #promoSlider .promo-slide.active .promo-copy > :nth-child(4) { transition-delay: .56s, .56s, 0s, 0s, 0s; }
 
-  /* ---------- الصور تظهر بنعومة بدل القفز ---------- */
   html.kl-motion .card .card-img img {
     transition: opacity .6s ease, transform var(--t-slow) var(--ease-out);
   }
   html.kl-motion .card .card-img img.kl-wait { opacity: 0; }
 
-  /* ---------- شريط تقدم التمرير ---------- */
   #klProgress {
     position: fixed;
     top: 0;
@@ -10522,7 +10059,6 @@ html[data-theme="dark"] .kl-footer .kl-branch-pin { background: #1677e8; }
   }
 }
 
-/* ---------- ضغطة لمسية ناعمة ---------- */
 .btn-primary:active,
 .btn-outline:active,
 .icon-add:active,
@@ -10534,10 +10070,6 @@ html[data-theme="dark"] .kl-footer .kl-branch-pin { background: #1677e8; }
   #klProgress { display: none; }
 }
 
-
-/* =====================================================================
-   حركة الإضافة للسلة: صورة تطير إلى السلة + إشعار + نبضة
-   ===================================================================== */
 .kl-fly {
   position: fixed;
   z-index: 400;
@@ -10587,7 +10119,6 @@ html[data-theme="dark"] .kl-footer .kl-branch-pin { background: #1677e8; }
   animation: klCartPop .6s var(--kl-ease, cubic-bezier(.22, 1, .36, 1));
 }
 
-/* ---------- إشعار "تمت الإضافة" ---------- */
 #klToast {
   position: fixed;
   left: 50%;
@@ -10669,10 +10200,6 @@ body[data-page="product"] #klToast { bottom: calc(96px + env(safe-area-inset-bot
   .kl-toast-ck path { stroke-dashoffset: 0; animation: none !important; }
 }
 
-
-/* =====================================================================
-   شريط تثبيت التطبيق (PWA)
-   ===================================================================== */
 #klInstall {
   position: fixed;
   left: 50%;
@@ -10762,14 +10289,12 @@ html[data-theme="dark"] .kl-ins-x { background: #1d3f52; color: #9bb0c1; }
   #klInstall, #klInstall.show { transition: opacity .2s ease, visibility 0s; transform: translate(-50%, 0); }
 }
 
-/* الصفحة الرئيسية: 6 منتجات لكل قسم = صفان متساويان (3 + 3) على الشاشات الكبيرة */
 @media (min-width: 901px) {
   .home-category-section .products-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-/* ===== اقتراحات البحث أثناء الكتابة ===== */
 .kl-sug {
   position: fixed;
   top: 0;
@@ -10855,9 +10380,13 @@ html[data-theme="dark"] .kl-sug .kl-sug-clear { color: #5fd0f5; }
 html[data-theme="dark"] .kl-sug .kl-sug-all { color: #8fe0f5; border-top-color: #1f3a4d; }
 html[data-theme="dark"] .kl-sug .kl-sug-empty { color: #e5eef5; }
 
-/* ساعات عمل الفروع */
 .kl-branch-hours { font-weight: 700; }
 .kl-branch-state {
+  display: inline-block; font-style: normal; font-size: 11px; font-weight: 800;
+  padding: 1px 8px; border-radius: 20px; margin-inline-start: 6px; vertical-align: 1px;
+}
+.kl-branch-state.open { background: #1fa855; color: #fff; }
+.kl-branch-state.closed { background: rgba(0, 0, 0, .35); color: #fff; }
   display: inline-block; font-style: normal; font-size: 11px; font-weight: 800;
   padding: 1px 8px; border-radius: 20px; margin-inline-start: 6px; vertical-align: 1px;
 }
